@@ -1,70 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <base href="/chausar-preview/">
-
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <meta name="description" content="Chausar (Chaupar) — Heritage Indian Social Strategy Board Game">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-
-  <!-- iOS Safari PWA Full-Screen Meta Tags -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Chausar">
-  <meta name="theme-color" content="#230E12">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>Chausar — Heritage Indian Strategy</title>
-  <link rel="manifest" href="manifest.json?v=phase4">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: #14070A;
-      color: #F4D678;
-      font-family: Georgia, serif;
-      overflow: hidden;
-      overscroll-behavior: none;
-      -webkit-tap-highlight-color: transparent;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      user-select: none;
-    }
-    #loading-splash {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      letter-spacing: 3px;
-    }
-  </style>
+  <title>Opening Chausar Room...</title>
   <script>
-    // Force-purge any stale iOS Safari service workers or CacheStorage entries from earlier builds
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(function(regs) {
-        for (var i = 0; i < regs.length; i++) { regs[i].unregister(); }
-      }).catch(function() {});
-    }
-    if ('caches' in window) {
-      caches.keys().then(function(names) {
-        for (var i = 0; i < names.length; i++) { caches.delete(names[i]); }
-      }).catch(function() {});
-    }
+    (function() {
+      var base = '/chausar-preview/';
+      var path = window.location.pathname;
+      var route = path.startsWith(base) ? '/' + path.slice(base.length) : '/';
+      var target = window.location.origin + base + '#' + route + window.location.search;
+      window.location.replace(target);
+    })();
   </script>
 </head>
-<body>
-  <div id="loading-splash">
-    <div style="font-size: 28px; font-weight: 700;">CHAUSAR</div>
-    <div style="font-size: 13px; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">Preparing the Royal Court (v4)...</div>
-  </div>
-  <script src="flutter_bootstrap.js?v=phase4" async></script>
+<body style="background:#14070A;color:#F4D678;font-family:Georgia,serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;">
+  Opening Chausar Private Room...
 </body>
 </html>
