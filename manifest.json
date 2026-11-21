@@ -1,11 +1,11 @@
 {
-    "name": "chausar_app",
-    "short_name": "chausar_app",
+    "name": "Chausar Heritage",
+    "short_name": "Chausar",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#2A080E",
+    "theme_color": "#4A0E17",
+    "description": "Chausar (Chaupar) \u2014 the heritage Indian strategy board game. Play online, with friends, or offline.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
