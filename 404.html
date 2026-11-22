@@ -23,6 +23,14 @@
   <title>Chausar — Heritage Indian Strategy</title>
   <link rel="manifest" href="manifest.json">
   <style>
+    html, body, flt-glass-pane, flt-scene-host, canvas {
+      touch-action: manipulation;
+      overscroll-behavior: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
     html, body {
       margin: 0;
       padding: 0;
@@ -31,11 +39,6 @@
       color: #F4D678;
       font-family: Georgia, serif;
       overflow: hidden;
-      overscroll-behavior: none;
-      -webkit-tap-highlight-color: transparent;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      user-select: none;
     }
     #loading-splash {
       display: flex;
